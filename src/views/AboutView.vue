@@ -54,7 +54,7 @@ import Menu from '../components/Menu.vue';
 
 .about-content {
     width: 100%;
-    height: 100vh;
+    margin-top: 200px;
     display: flex;
     align-items: center;
     justify-content: center;

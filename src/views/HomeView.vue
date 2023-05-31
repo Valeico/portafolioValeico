@@ -37,7 +37,8 @@ import Menu from '../components/Menu.vue';
     align-items: center;
     justify-content: center;
     gap: 30px;
-    height: 100vh;
+    height: 101%;
+    margin-top: 200px;
     /* border: 1px solid white; */
 }
 

@@ -6,7 +6,7 @@ import Menu from '../components/Menu.vue';
    <div class="main-container-skills">
     <Menu></Menu>
     <div class="main-skills">
-        <h1>Skills</h1>
+        <h1>Habilidades</h1>
         <div class="skills">
 
             <div class="skills-flex">
@@ -162,6 +162,35 @@ import Menu from '../components/Menu.vue';
             </div>
         </div>
     </div>
+
+    <div class="education-work">
+        <h1>Carrera</h1>
+        <div class="header-flex">
+            <p><i class="fa-solid fa-school"></i> Educacion</p>
+            <p><i class="fa-solid fa-briefcase"></i> Work</p>
+        </div>
+        <div class="data-education">
+            <div class="flex-dos-ing">
+                <div class="ing">
+                    <p>Ing. Tecnologias de la informacion y la comunicacion, Universidad tecnologicca de Tijuana</p>
+                </div>
+                <div class="ing">
+                    <p>Tec. programacion, Cecyte B.C.</p>
+                </div>
+            </div>
+            <div class='columna'>
+                <i class="fa fa-circle"></i>
+                <i class="fa fa-circle"></i>
+                <i class="fa fa-circle"></i>
+            </div>
+            <div class="unico">
+                <div class="ing">
+                    <p>Tsu. Mercadotecnia y Comercio electronico, Universidad tecnologicca de Tijuana</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
    </div>
 </template>
 
@@ -177,7 +206,7 @@ import Menu from '../components/Menu.vue';
 
 .main-skills {
     width: 100%;
-    height: 100vh;
+    height: 50vh;
     margin-top: 30px;
     /* border: 5px solid BLUE; */
 }
@@ -251,6 +280,65 @@ import Menu from '../components/Menu.vue';
     height: 10px;
     border: 1px solid white;
     background-color: #523A7F;
+}
+
+.education-work {
+    width: 100%;
+    height: calc(100% - 100px);
+    /* border: 5px solid pink; */
+}
+
+.education-work > h1 {
+    display: grid;
+    justify-content: center;
+    font-size: 40px;
+}
+
+.header-flex {
+    display: flex;
+    margin-top: 20px;
+    gap: 100px;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.data-education {
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-dos-ing {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: space-between;
+    /* border: 1px solid green; */
+}
+
+.ing {
+    width: 340px;
+    margin: 0 20px;
+    line-height: 25px;
+}
+
+.columna {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 1px;
+    height: 200px;
+    background-color: white;
+}
+
+.columna > i {
+    position: relative;
+    right: 15px;
+    font-size: 30px;
 }
 
 </style>
